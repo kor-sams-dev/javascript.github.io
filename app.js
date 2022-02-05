@@ -1,14 +1,12 @@
-const h1 = document.querySelector("div.hello:first-child h1")
+const h1 = document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
-  const currentColor = h1.style.color;
-  let newColor ;
-  if(currentColor==='blue'){
-    newColor='tomato'
-  } else {
-    newColor='blue'
-  }
-  h1.style.color = newColor
+  // if(h1.classList.contains(clickClass)){
+  //   h1.classList.remove(clickClass);
+  // } else {
+  //   h1.classList.add(clickClass)
+  // };
+  h1.classList.toggle('active')
 }
 
-h1.addEventListener("click", handleTitleClick)
+h1.addEventListener('click',handleTitleClick)
