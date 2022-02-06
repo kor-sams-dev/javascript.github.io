@@ -1,0 +1,59 @@
+#todo-form{
+  display: flex;
+  justify-content: center;
+}
+
+#todo-form input{
+  margin-top: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: var(--transparent-color);
+  font-size: 40px;
+  width: 700px;
+  text-align: center;
+}
+
+#todo-form input::placeholder{
+  color: var(--white);
+  font-size: 40px;
+  text-align: center;
+}
+
+#todo-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+#todo-list li{
+  width: 400px;
+  margin: 5px 0px ;
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+#todo-list li span{
+  color: white;
+}
+
+#todo-list li button{
+  border: none;
+  background-color: var(--transparent-color);
+}
+
+@keyframes listHover{
+  from{
+    background-color: var(--transparent-color);
+    border-bottom: 1px solid rgba(0,0,0,0);
+  }
+  to{
+    background-color: rgba(255,255,255,0.4);
+    border-bottom: 1px solid var(--white);
+  }
+}
+
+#todo-list li:hover{
+  animation: listHover 0.5s forwards;
+}

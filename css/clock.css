@@ -1,0 +1,15 @@
+#clock{
+  padding-top: 200px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#clock__time{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 120px;
+  color: white;
+}

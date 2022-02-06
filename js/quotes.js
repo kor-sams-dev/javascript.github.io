@@ -39,15 +39,20 @@ const quotes = [
   quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
   author: 'Jim Rohn'
   },
-  ];
+];
 
-const quote = document.querySelector("#quote span:first-child")
-const author = document.querySelector("#quote span:last-child")
-// round 반올림
-// ceil 올림
-// floor 내림
+function showQuote(){
+  const quote = document.querySelector("#quote span:first-child")
+  const author = document.querySelector("#quote span:last-child")
+  // round 반올림
+  // ceil 올림
+  // floor 내림
+  
+  const todayQuote = quotes[Math.floor(Math.random() * quotes.length)]
+  
+  quote.innerText = todayQuote.quote
+  author.innerText = todayQuote.author
+}
 
-const todayQuote = quotes[Math.floor(Math.random() * quotes.length)]
-
-quote.innerText = todayQuote.quote
-author.innerText = todayQuote.author
+showQuote()
+setInterval(showQuote, 10000);

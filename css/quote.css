@@ -1,0 +1,23 @@
+#quote{
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#quote__quote{
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+#quote__author{
+  font-size: 10px;
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}

@@ -1,0 +1,24 @@
+#weather-main{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: var(--white);
+  opacity: 0;
+}
+
+#weather-main__top{
+  margin-bottom: 10px;
+}
+
+#weather-main__weather{
+  color: rgba(255,255,255,0.7);
+}
+
+#weather-main__temp{
+  font-size: 25px;
+  margin: 10px;
+}

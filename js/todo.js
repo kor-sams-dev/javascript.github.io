@@ -29,11 +29,11 @@ function paintToDo(newTodo){
   button.innerText = '❌'
   button.addEventListener('click', handelDeleteTodo)
 
-  li.appendChild(span)
   li.appendChild(button)
+  li.appendChild(span)
   
   toDoList.appendChild(li)
-
+  li.classList.add('fade-in')
   
 }
 
