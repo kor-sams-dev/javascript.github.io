@@ -16,7 +16,7 @@ function onLoginSubmit(event){
   const userName = loginInput.value
   localStorage.setItem(USERNAME_KEY, userName)
 
-  handleShowGreeting()
+  paintGreetings(userName)
 
 }
 
